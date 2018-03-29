@@ -1,7 +1,7 @@
 {
-  "name": "UltraType NitroType / Typing Game Bot",
-  "short_name": "UltraType",
-  "author": "ultratype",
+  "name": "Mega Type",
+  "short_name": "MegaType",
+  "author": "Mega Type",
   "description": "A typing game bot that will win almost any match",
 
   "version": "2.6",
@@ -18,7 +18,7 @@
   "browser_action": {
     "default_icon": "ico/1024.png",
     "default_popup": "popup/popup.html",
-    "default_title": "UltraType"
+    "default_title": "Mega Type"
   },
   "content_scripts": [
     {
