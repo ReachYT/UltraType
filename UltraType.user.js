@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         UltraType NitroType bot
+// @name         Mega Type Bot
 // @version      2.4.0
 // @downloadURL  https://rawgit.com/ultratype/UltraTypeBot/master/UltraType.user.js
 // @updateURL    https://rawgit.com/ultratype/UltraTypeBot/master/UltraType.user.js
