@@ -4,7 +4,7 @@
 // @downloadURL  https://rawgit.com/ReachYT/UltraType/raw/master/UltraType.user.js
 // @updateURL    https://rawgit.com/ReachYT/UltraType/raw/master/UltraType.user.js
 // @description  A fast, easy to use bot for NitroType.com
-// @author       UltraType
+// @author       MegaType
 // @match        https://www.nitrotype.com/race/*
 // @match        https://www.nitrotype.com/race
 // @match        http://www.nitrotype.com/race
