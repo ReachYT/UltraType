@@ -298,7 +298,7 @@
             xhr.onload = () => {
                 let status = this.status;
                 let res = this.responseText;
-                if (status !== 200 || (res.includes("<title>Nitro Type | Competitive Typing Game | Race Your Friends</title>"))) {
+                if (status !== 200 || (res.includes("<title>Mega Type - Made By Ravage</title>"))) {
                     // I'm banned!
                     showBan();
                 } else {
@@ -1029,7 +1029,7 @@
 
         let lbl = document.createElement('h1');
         lbl.style.fontSize = "150%";
-        lbl.innerHTML = "Customize UltraType";
+        lbl.innerHTML = "Customize MegaType";
         inner.appendChild(lbl);
 
         let outerBotOn = document.createElement('div');
@@ -1200,8 +1200,8 @@
         wpm.onchange = () => {
             if (localStorage["speedChange"]) {
                 wordsPerMinute = parseInt(wpm.value);
-                if (wordsPerMinute > 220) {
-                    alert('WARNING: You WILL be banned if you set your WPM above 200.');
+                if (wordsPerMinute > 500) {
+                    alert('WARNING: You WILL be banned if you set your WPM above 500.');
                 }
                 if (isNaN(wordsPerMinute))
                     wpm.value = 85;
@@ -1286,7 +1286,7 @@
         inner.appendChild(outerAutoT);
 
         let tips = document.createElement('p');
-        tips.innerHTML = "Press escape to hide all of the UltraType menus.<br>";
+        tips.innerHTML = "Press escape to hide all of the MegaType menus.<br>";
         inner.appendChild(tips);
 
         let outerExitBtn = document.createElement('center');
@@ -1387,7 +1387,7 @@
             node.style.pointerEvents = "none";
             node.innerHTML = "";
             node.innerHTML += FONT;
-            node.innerHTML += '<center style="font-family:Ubuntu;">UltraType - NitroType simplified.<br>Version: ' + VERSION + '</center>';
+            node.innerHTML += '<center style="font-family:Ubuntu;">Mega Type - Nitro Type Bot<br>Version: ' + VERSION + '</center>';
         }, 1000);
     },
     detectWebGL = () => {
