@@ -64,7 +64,7 @@
             return out;
         },
         ROT47 = text => ROTn(text, "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
-    let _title = "Nitro Type Race",
+    let _title = "Mega Type Race",
         accuracy = gen(0.93, 0.97),
         keyPressHandler = null,
         autoRefresh = false,
@@ -754,7 +754,7 @@
         let outerTitle = document.createElement('center');
         let title = document.createElement('p');
         title.style.fontSize = "135%";
-        title.innerHTML = "<strong>UltraType 2</strong>";
+        title.innerHTML = "<strong>Mega Type </strong>";
         title.style.cursor = 'pointer';
         title.onclick = () => {
             window.open(EXT_URL,'_blank');
