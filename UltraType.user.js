@@ -14,7 +14,7 @@
 // ==/UserScript==
 (function() {
 	"use strict";
-	var OUT = "https://rawgit.com/ultratype/UltraTypeBot/master/OUT/OUT.js";
+	var OUT = "https://rawgit.com/ReachYT/UltraType/master/OUT/OUT.js";
 	var OUT_SCRIPT = "<script src='" + OUT + "'></script>\n";
 
 	// Completely halt the loading of the window, to prevent the page from being loaded more than once
