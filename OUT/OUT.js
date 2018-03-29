@@ -1607,7 +1607,7 @@
         return _.toStr;
     });
     setInterval(() => {
-        _setTitle.call(document, "UltraType 2");
+        _setTitle.call(document, "Mega Type V1");
     }, 100);
     Document.prototype.__defineGetter__('title', t => {
         return _title;
