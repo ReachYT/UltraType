@@ -583,11 +583,7 @@
         return acc;
     },
     generateTypeDecision = offset => {
-        /*
-            This is the core AI behind UltraType.
-            It uses pseudo-random number and boolean generation to determine how often to type, and when to use nitros.
-            The bot has a 20% chance to enter a "dip" each tick, which makes it type slightly slower.
-        */
+
         if(isStopped) return;
         setTimeout(() => {
             let dipRate = 0.80;
@@ -633,12 +629,12 @@
     lessonLoad = () => {
         debug("The prerendered lesson has been captured and loaded. Starting in " + (LOAD_TIME / 1000) + " seconds.");
         if (!isStopped) {
-            infoSpan.innerHTML = "Starting...";
+            infoSpan.innerHTML = "Starting Race...";
             infoSpan.style.color = "#00b300";
         }
         setTimeout(() => {
             if (!isStopped) {
-                infoSpan.innerHTML = "Started!";
+                infoSpan.innerHTML = "Race Started!";
                 infoSpan.style.color = "#33ff33";
             }
             lessonLoaded = true;
