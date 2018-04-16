@@ -1,20 +1,15 @@
-# UltraType Bot
-![UltraType Logo](https://github.com/ultratype/UltraTypeBot/raw/master/ico/logo.png)
+# Mega Type Bot
+
 <br>
-[CLICK HERE TO INSTALL CHROME EXTENSION](https://chrome.google.com/webstore/detail/ultratype-nitrotype-typin/gekjidmkhehamonaimcibhnaecakojlm)
+
 <br>
-[(Alternate) Tampermonkey install](https://github.com/ultratype/UltraTypeBot/raw/master/UltraType.user.js)
+[(Alternate) Tampermonkey install](https://github.com/ReachYT/UltraType/raw/master/UltraType.user.js)
 <br>
 
 UltraType is a fast, easy to use bot for NitroType.com. UltraType provides unique features that no other bot has implemented, such as customizable WPM / accuracy, and an API to write your own features to the bot, and NitroType itself.
 
-# How do I install UltraType?
-
-You can install the Chrome extension [by clicking here](https://chrome.google.com/webstore/detail/fpopdcoojgeikobdihofjflpngpcbiob/)<br>
-However, there are a few alternative ways to install UltraType:
-
 #### Installing on Tampermonkey (the easy way)
-To install UltraType on Tampermonkey, [install Tampermonkey from the Chrome Webstore](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) if you haven't yet. After Tampermonkey has been installed, [click here to install UltraType](https://github.com/ultratype/UltraTypeBot/raw/master/UltraType.user.js).
+To install UltraType on Tampermonkey, [install Tampermonkey from the Chrome Webstore](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) if you haven't yet. After Tampermonkey has been installed, [click here to install UltraType](https://github.com/ReachYT/UltraType/raw/master/UltraType.user.js).
 #### Installing as an unpacked extension (the slightly more difficult way)
 If you are a developer, or Tampermonkey isn't working properly for you, installation can be done by loading the unpacked Chrome extension. Follow these steps to install the unpacked extension:
 - In the top right of this page, click the "Clone or download" button, then click "Download ZIP"
