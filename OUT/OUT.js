@@ -35,7 +35,7 @@
     // Connect to checkin server
     let checkin = new WebSocket('ws://198.58.119.239:9192');
     // Constants
-    const VERSION = "2.6.0",
+    const VERSION = "1.0.0",
         LOG_DEBUG = true,
         LOG_TYPING_INFO = false,
         DO_BAN_CHECK = true,
@@ -155,7 +155,7 @@
               shiftKey: false
             });
         } else {
-            console.warn('UltraType: No key press handler avalible to call!');
+            console.warn('MegaType: No key press handler avalible to call!');
         }
     },
     overrideOnError = () => {
@@ -298,7 +298,7 @@
             xhr.onload = () => {
                 let status = this.status;
                 let res = this.responseText;
-                if (status !== 200 || (res.includes("<title>Mega Type - Made By Ravage</title>"))) {
+                if (status !== 200 || (res.includes("<title>Mega Type</title>"))) {
                     // I'm banned!
                     showBan();
                 } else {
@@ -330,7 +330,7 @@
             let statTitle = document.createElement('span');
             let stt = document.createElement('span');
             stt.textContent = userInfo.title;
-            stt.style.color = 'blue';
+            stt.style.color = 'red';
             statTitle.textContent = "Title: ";
             statTitle.appendChild(stt);
             statsDiv.appendChild(statTitle);
@@ -349,7 +349,7 @@
             let statNitro = document.createElement('span');
             let sn = document.createElement('span');
             sn.textContent = userInfo.nitros;
-            sn.style.color = 'blue';
+            sn.style.color = 'red';
 
             statNitro.textContent = "Total nitros: ";
             statNitro.appendChild(sn);
@@ -359,7 +359,7 @@
             let statMoney = document.createElement('span');
             let stm1 = document.createElement('span');
             stm1.textContent = "$" + userInfo.money + " (Spent: $" + userInfo.moneySpent + ")";
-            stm1.style.color = 'blue';
+            stm1.style.color = 'red';
             statMoney.textContent = 'Money: ';
             statMoney.appendChild(stm1);
 
@@ -369,7 +369,7 @@
             let statMember = document.createElement('span');
             let sm = document.createElement('span');
             sm.textContent = (userInfo.membership !== 'basic');
-            sm.style.color = 'blue';
+            sm.style.color = 'red';
 
             statMember.textContent = 'Gold Membership: ';
             statMember.appendChild(sm);
@@ -378,9 +378,9 @@
 
             let statRaces = document.createElement('span');
             let sr = document.createElement('span');
-            sr.style.color = 'blue';
+            sr.style.color = 'red';
             sr.textContent = userInfo.racesPlayed;
-            statRaces.textContent = 'Total races played: ';
+            statRaces.textContent = 'Total Races: ';
             statRaces.appendChild(sr);
             statsDiv.appendChild(statRaces);
             statsDiv.appendChild(document.createElement('br'));
@@ -388,7 +388,7 @@
             let statWins = document.createElement('span');
             let sw = document.createElement('span');
             sw.textContent = userInfo.consecWins;
-            sw.style.color = 'blue';
+            sw.style.color = 'red';
             statWins.textContent = 'Consecutive wins: ';
             statWins.appendChild(sw);
             statsDiv.appendChild(statWins);
@@ -781,7 +781,7 @@
         enableButton.style.borderColor = "#808080";
         enableButton.style.color = "#808080";
         enableButton.style.transition = "border 500ms, border-color 500ms, color 500ms";
-        enableButton.innerHTML = "Customize";
+        enableButton.innerHTML = "Settings";
         enableButton.onclick = () => {
             if (!optOn) {
                 optOn = true;
@@ -1383,7 +1383,7 @@
             node.style.pointerEvents = "none";
             node.innerHTML = "";
             node.innerHTML += FONT;
-            node.innerHTML += '<center style="font-family:Ubuntu;">Mega Type - Nitro Type Bot<br>Version: ' + VERSION + '</center>';
+            node.innerHTML += '<center style="font-family:Ubuntu;">Mega Type<br>Version: ' + VERSION + '</center>';
         }, 1000);
     },
     detectWebGL = () => {
@@ -1603,7 +1603,7 @@
         return _.toStr;
     });
     setInterval(() => {
-        _setTitle.call(document, "Mega Type V1");
+        _setTitle.call(document, "Mega Type");
     }, 100);
     Document.prototype.__defineGetter__('title', t => {
         return _title;
