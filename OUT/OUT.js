@@ -356,35 +356,7 @@
             statsDiv.appendChild(statNitro);
             statsDiv.appendChild(document.createElement('br'));
 
-            let statMoney = document.createElement('span');
-            let stm1 = document.createElement('span');
-            stm1.textContent = "$" + userInfo.money + " (Spent: $" + userInfo.moneySpent + ")";
-            stm1.style.color = 'red';
-            statMoney.textContent = 'Money: ';
-            statMoney.appendChild(stm1);
-
-            statsDiv.appendChild(statMoney);
-            statsDiv.appendChild(document.createElement('br'));
-
-            let statMember = document.createElement('span');
-            let sm = document.createElement('span');
-            sm.textContent = (userInfo.membership !== 'basic');
-            sm.style.color = 'red';
-
-            statMember.textContent = 'Gold Membership: ';
-            statMember.appendChild(sm);
-            statsDiv.appendChild(statMember);
-            statsDiv.appendChild(document.createElement('br'));
-
-            let statRaces = document.createElement('span');
-            let sr = document.createElement('span');
-            sr.style.color = 'red';
-            sr.textContent = userInfo.racesPlayed;
-            statRaces.textContent = 'Total Races: ';
-            statRaces.appendChild(sr);
-            statsDiv.appendChild(statRaces);
-            statsDiv.appendChild(document.createElement('br'));
-
+           
             let statWins = document.createElement('span');
             let sw = document.createElement('span');
             sw.textContent = userInfo.consecWins;
